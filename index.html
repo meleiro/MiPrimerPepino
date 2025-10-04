@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Indica el tipo de documento. En este caso HTML5, la versión estándar actual -->
+
+<html lang="es">
+<!-- La etiqueta <html> indica el inicio del documento HTML.
+     El atributo lang="es" indica que el idioma principal de la página es español. -->
+
+<head>
+    <!-- La sección <head> contiene metadatos y configuraciones de la página,
+         no se muestran directamente en el navegador. -->
+
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8,
+         lo cual permite usar acentos, eñes y caracteres especiales correctamente. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive.
+         Ajusta el ancho al tamaño del dispositivo y escala el contenido para móviles. -->
+
+    <title>Mi primera página</title>
+    <!-- Título de la pestaña del navegador -->
+</head>
+
+<body>
+    <!-- Todo lo que está dentro de <body> es el contenido visible de la página -->
+
+    <!-- Este es un comentario HTML.
+         El texto que pongas aquí no se muestra en la página.
+         En tu caso, tienes texto extraño dentro, pero no afecta al resultado. -->
+
+    <h1>Pepinillos Manolo</h1>
+    <!-- <h1> es un encabezado de nivel 1, el más importante en la página. -->
+
+    <h2>Pepinillos</h2>
+    <!-- <h2> es un encabezado de nivel 2, menos importante que el h1. -->
+
+    <h2>Manolo</h2>
+    <!-- Otro encabezado de nivel 2. -->
+
+    <a href="https://www.google.com/" target="_blank">
+        Clic para ir a google
+    </a>
+    <!-- Un enlace (<a>).
+         El atributo href define la URL a la que apunta.
+         target="_blank" hace que se abra en una nueva pestaña. -->
+
+    <img src="pepino.png" alt="Foto de un pepino torcido" width="200" height="200" title="Logo pepino">
+    <!-- Imagen (<img>).
+         src = ruta del archivo de imagen.
+         alt = texto alternativo (importante para accesibilidad o si no carga la imagen).
+         width y height = dimensiones en píxeles.
+         title = texto emergente al pasar el ratón encima. -->
+
+    <h3>Pepinillos Manolo</h3>
+    <!-- <h3> es un encabezado de nivel 3, jerárquicamente menor que h1 y h2. -->
+
+    <p>Hola qué ase</p>
+    <!-- <p> define un párrafo de texto. -->
+
+    <h2>Tipos de pepino</h2>
+    <!-- Otro encabezado de nivel 2. -->
+
+    <ul>
+        <!-- <ul> define una lista no ordenada (con viñetas). -->
+        <li><a href="https://www.google.com/">Pepino albino</a></li>
+        <!-- Cada <li> es un elemento de lista.
+             Aquí además se incluye un enlace dentro del primer elemento. -->
+        <li>Pepino moreno</li>
+        <li>Pepino rubio</li>
+    </ul>
+
+    <table>
+        <!-- <table> crea una tabla. -->
+
+        <thead>
+            <!-- <thead> es la sección de cabecera de la tabla. -->
+            <tr>
+                <!-- <tr> define una fila en la tabla. -->
+                <th>Comida</th>
+                <th>Menú</th>
+                <!-- <th> define celdas de encabezado (en negrita por defecto). -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- <tbody> contiene el cuerpo de la tabla (los datos principales). -->
+
+            <tr>
+                <td>Desayuno</td>
+                <td>Tostadas</td>
+                <!-- <td> define una celda normal de la tabla. -->
+            </tr>
+
+            <tr>
+                <td>Comida</td>
+                <td>Filete</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
