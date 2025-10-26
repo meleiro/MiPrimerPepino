@@ -268,7 +268,8 @@
       <p></p>
 
       <label for="pass">Contraseña:</label>
-      <input id="pass" name="password" type="password" minlength="8" placeholder="Escribe aquí tu contraseña" autocomplete="new-password">
+      <input id="pass" name="password" type="password" minlength="8" placeholder="Escribe aquí tu contraseña"
+        autocomplete="new-password">
       <!--
         type="password": oculta caracteres.
         * minlength: longitud mínima.
@@ -311,7 +312,8 @@
       <p></p>
 
       <label for="prioridad">Prioridad :</label>
-      <input id="prioridad" name="prioridad" type="range" min="0" max="100" value="50" oninput="document.getElementById('valorRango').value=this.value">
+      <input id="prioridad" name="prioridad" type="range" min="0" max="100" value="50"
+        oninput="document.getElementById('valorRango').value=this.value">
       <output id="valorRango">50</output>
       <!--
         type="range": deslizador. Añade min/max/value para rango/control inicial.
@@ -398,20 +400,46 @@
       </select>
     </fieldset>
 
+    <fieldset>
+      <!-- <fieldset> agrupa varios campos del formulario bajo un mismo bloque lógico -->
+
+      <legend>Texto y archivos</legend>
+      <!-- <legend> define el título o nombre del grupo de campos -->
+
+      <label>Observaciones: </label>
+      <!-- <label> muestra un texto descriptivo para el siguiente campo de entrada -->
+
+      <textarea rows="10" cols="10"></textarea>
+      <!-- <textarea> crea un área de texto multilínea.
+         - rows: número de filas visibles.
+         - cols: número de columnas visibles. -->
+
+      <label>Adjuntar factura: </label>
+      <!-- Otro texto descriptivo para el siguiente campo de entrada -->
+
+      <input type="file" accept=".pdf, .doc" multiple>
+      <!-- Campo que permite seleccionar uno o varios archivos del ordenador.
+         - type="file": define el control de subida de archivos.
+         - accept=".pdf, .doc": restringe los tipos de archivo permitidos.
+         - multiple: permite seleccionar más de un archivo. -->
+
+      <label>Cargando fichero</label>
+      <!-- Texto para acompañar el indicador de progreso -->
+
+      <progress></progress>
+      <!-- <progress> muestra una barra de progreso (por ejemplo, al subir un archivo o cargar datos).
+         Puede incluir atributos como:
+         - value="50" y max="100" para indicar el porcentaje de progreso. -->
+    </fieldset>
+    <!-- Cierre del segundo grupo de campos del formulario -->
+
+
+
+
     <button type="submit">Enviar</button>
-    <!--
-      <button> por defecto es type="submit" (envía el formulario). Es buena práctica declararlo explícitamente.
-      Otros tipos: type="button" (no envía), type="reset" (reinicia valores por defecto).
-    -->
+
   </form>
 
-  <!--
-    Buenas prácticas generales adicionales:
-    * Valida del lado del servidor SIEMPRE, aunque uses validación HTML5 en el cliente.
-    * Usa CSS para espaciados (<br> solo para saltos de línea en contenidos, no para maquetar).
-    * Añade mensajes de error/ayuda con aria-live para accesibilidad si implementas validación personalizada.
-    * Considera <main> para envolver el contenido principal y <footer> para el pie de página.
-  -->
 
 </body>
 
